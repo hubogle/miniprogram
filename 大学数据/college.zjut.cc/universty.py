@@ -8,6 +8,7 @@ headers = {
 response = requests.get(start_url, headers=headers)
 html = etree.HTML(response.text)
 result = html.xpath("//ul[@class='list-unstyled row']//li[@class='col-md-4']/a/text()")
+result = sorted(result)
 # print(result)
 with open("data.json", "w", encoding="utf-8") as fileobject:
     fileobject.write(json.dumps(result, indent=2, ensure_ascii=False))
