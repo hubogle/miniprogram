@@ -48,7 +48,7 @@
 	
 
 ## 后端需求
-
+> id, user_id, province_namev, city, school_name, sex, age
 > 后端的话，主要就是 sql 分组，查询性能优化的话，目前没有好想法。
 
 * Flask 构建后台
